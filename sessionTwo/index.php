@@ -11,6 +11,8 @@
 //     type casting (string) $var
 
 
+// some string functions
+
 //     strlen()
 //     str_word_count()
 //     strpos(sring, search)

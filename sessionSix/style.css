@@ -1,0 +1,93 @@
+/* there are three ways to apply css on html elements
+  1- style attribute
+  2- style tag
+  3- external file like this file "we have to use link element to link the file"
+*/
+
+
+/* 
+  css syntax
+  selector {
+    property: value;
+    property: value;
+  }
+
+
+  selectors in css
+  by tag name
+
+  h1{
+  }
+
+  by class name
+  .class-name {
+}
+  
+
+by id name
+#idName{
+}
+
+and more
+*/
+
+
+/* 
+  some properties
+
+  background-color: colorName;
+  color: colorName;
+
+
+  font-style:
+  font-family:
+  font-weight:
+  font-size:
+
+
+  test-align
+  
+  test-decoration
+  text-transformation: uppercase
+
+  letter-spacing	Specifies the space between characters in a text
+  line-height	Specifies the line height
+  text-indent	Specifies the indentation of the first line in a text-block
+  word-spacing	Specifies the space between words in a text
+  text-shadow: horizontal vertical blur color
+
+
+
+  padding is the space between parent and its children
+  padding: top right bottom left;
+
+
+  margin: the space between element and its neighbours
+  margin: top right bottom left
+
+
+  border: size style color;
+  border: 10px solid red;
+
+
+  // flex
+
+  if we want to apply flexbox we have to add display: flex to the parent element
+
+
+  flex-direction=> the direction of the elements
+  justify-content => aligning on x axis
+  align-items => aligning on y axis
+  flex-wrap => if there is no enough space the rest of the elements will go to the next line
+  gap => the space between elements
+
+  // children properties
+
+  order => the order of the element
+  flex-grow
+  flex-shrink
+  flex-basis
+  flex: flex-grow flex-shrink flex-basis
+  align-self
+}
+*/
