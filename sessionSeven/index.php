@@ -1,187 +1,262 @@
 <?php
 
-/**
- * Class: Car
-
-Properties:
-
-brand
-
-color
-
-speed (default to 0)
-
-Constructor to initialize brand and color => Done
-
-Methods:
-
-start() – prints "The [brand] car has started."
-
-accelerate($amount) – increases speed by $amount
-
-brake() – sets speed to 0
-
-getStatus() – returns a string like: "Brand: Toyota, Color: Red, Speed: 60 km/h"
-
- */
+// function hello() {
+//   return 'hello world';
+// }
 
 
-// class Car {
-//   private $color;
-//   private $speed;
-//   private $brand;
+// $varName;
 
-//   public function __construct($color, $brand) {
-//     $this->color = $color;
-//     $this->brand = $brand;
-//     $this->speed = 0;
-//   }
+// $nums = [10, 20, 30, 40];
 
-//   public function start() {
-//     echo "The " . $this->brand . " car has started.";
-//   }
+// $newArray = array_map(function($e) {
+//   return $e * 2;
+// }, $nums);
 
-//   public function accelerate($amoud) {
-//     $this->speed += $amoud;
-//   }
 
-//   public function brake () {
-//     $this->speed = 0;
-//   }
+// print_r($newArray);
 
-//   public function getStatus() {
-//     return "Brand: " . $this->brand ." , Color: " . $this->color . ", Speed: " . $this->speed ." km/h";
+
+
+
+
+
+
+
+// class Car{
+//   public $color;
+//   public $speed;
+
+//   public function accelerate() {
+//     echo "the speed of the car is incresing";
 //   }
 // }
 
 
+// $car1 = new Car();
+
+
+// $car1->color = 'blue';
+
+// echo $car1->color;
+
+// $car1->accelerate();
 
 
 
 
-// abstract class Animal {
-//   abstract public function run();
-// }
 
 
-// class Dog extends Animal {
+// Dog
+  // color
+  // speed
+
+  // run
+  // bark
+
+
+// Cat
+  // weight
+  // color
+  
+  // eat
+  // sleep
+
+
+
+// class Dog {
+//   public $color;
+//   public $speed;
+
+//   public function bark() {
+//     echo "the dog is barking";
+//   }
+
 //   public function run() {
 //     echo "the dog is running";
 //   }
 // }
 
-// class Cat extends Animal {
-//   public function run() {
-//     echo "the cat is running";
+// class Cat {
+//   public $weight;
+//   public $color;
+  
+//   public function eat() {
+//     echo "cat is eating";
+//   }
+//   public function sleep() {
+//     echo "cat is sleeping";
 //   }
 // }
 
+
 // $dog1 = new Dog();
+// $dog1->color = 'red';
+// $dog1->speed = 2;
+// echo 'the colors is ' . $dog1->color;
+// echo "<br>";
+// echo 'the speed is ' . $dog1->speed;
+// $dog1->bark();
+// echo "<br>";
 // $dog1->run();
+
 // echo "<br>";
 // $cat1 = new Cat();
-// $cat1->run();
-
-
-
-
-
-
-
-
-
-
-
+// $cat1->weight = 1;
+// $cat1->color = 'orange';
+// echo 'the weight is ' . $cat1->weight;
+// echo "<br>";
+// echo 'the color is ' . $cat1->color;
+// $cat1->eat();
+// $cat1->sleep();
 
 
 
 // class Dog {
-//   private $color;
+//   public $color;
 
-//   public function setColor($c) {
+//   public function run() {
+//     echo 'the dog is running';
+//   }
+
+
+//   public function __construct($c, $s){ 
 //     $this->color = $c;
-//   }
-//   public function getColor() {
-//     return $this->color;
-//   }
-// }
-
-
-// class Animal {
-//   private $color;
-//   private $speed;
-
-//   public function setColor($c) {
-//     $this->color = $c;
-//   }
-
-//   public function getColor() {
-//     return $this->color;
-//   }
-
-
-//   public function setSpeed($s) {
 //     $this->speed = $s;
 //   }
 
-//   public function getSpeed() {
-//     return $this->speed;
+// }
+
+// $myDog = new Dog('red', 8);
+// echo "<br>";
+
+
+// echo $myDog->color;
+// echo "<br>";
+// echo $myDog->speed;
+
+
+
+
+// class Student {
+
+//   private $name;
+
+
+//   public function setName($n) {
+//     $this->name = $n;
+//   }
+
+//   public function getName() {
+//     return $this->name;
 //   }
 // }
 
-// class AnimalTwo {
-//   private $weight;
-//   public function setWegith($w) {
-//     $this->weight = $w;
+
+// public
+// protected
+// private
+
+
+
+// $studentOne = new Student();
+// $studentOne->setName('osama');
+// echo $studentOne->getName();
+
+
+// Teacher
+// priavte name
+// private id
+// private salary
+// public setName
+// public setId
+// public setSalary
+// public getName
+// public getId
+// public getSalary
+
+// count the number of objects
+
+
+
+// class Teacher {
+//   public static $count = 0;
+//   private $name;
+//   private $id;
+//   private $salary;
+
+
+//   public function setName($n) {
+//     $this->name = $n;
 //   }
 
-//   public function getSpeed() {
-//     return $this->weight;
+//   public function setId($i) {
+//     $this->id = $i;
+//   }
+
+//   public function setSalary($s) {
+//     $this->salary = $s;
+//   }
+
+//   public function getName() {
+//     return $this->name;
+//   }
+
+//   public function getId() {
+//     return $this->id;
+//   }
+
+//   public function getSalary() {
+//     return $this->salary;
+//   }
+
+
+//   public function __construct() {
+//     Teacher::$count++;
 //   }
 // }
 
 
-// class Dog extends Animal{
-//   public function printAllInfo(): void {
-//     echo "the color is " . $this->getColor() . " and the speed is " . $this->getSpeed();
-//   }
-// }
+// $teacherOne = new Teacher();
+// $teacherOne->setName('osama');
+
+// echo $teacherOne->getName();
+
+// echo "<br>";
+
+// $teacherTwo = new Teacher();
+// $teacherTwo->setName('ali');
+// echo $teacherTwo->getName();
+
+// echo "<br>";
+
+// echo Teacher::$count;
 
 
 
 
 
-// Create an abstract class Shape and two classes Circle and Rectangle that calculate the area differently.
 
 
-// abstract class Shape {
-//   abstract public function getArea();
-// }
+abstract class Animal {
+  abstract public function run();
+  public function normalMethod() {
+    // adding some code;
+  }
+}
+
+class Dog extends Animal {
+  public function run () {
+    echo 'the dog is running';
+  }
+}
+
+class Cat extends Animal {
+  public function run() {
+    echo 'the cat is running';
+  }
+}
 
 
-// class Circle extends Shape {
-//   private $radius;
-
-//   public function __construct($radius) {
-//       $this->radius = $radius;
-//   }
-
-//   public function getArea() {
-//       return 3.14 * $this->radius * $this->radius;
-//   }
-// }
-
-// class Rectangle extends Shape {
-//   private $width;
-//   private $height;
-
-//   public function __construct($width, $height) {
-//       $this->width = $width;
-//       $this->height = $height;
-//   }
-
-//   public function getArea() {
-//       return $this->width * $this->height;
-//   }
-// }
-
+// $dog1 = new Dog();
+// $dog1->run();
